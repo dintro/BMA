@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="ConfigDataCollector.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="DataCollector.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="DataCollectorInterface.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="EventDataCollector.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="ExceptionDataCollector.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="LateDataCollectorInterface.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="LoggerDataCollector.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="MemoryDataCollector.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="RequestDataCollector.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="RouterDataCollector.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="TimeDataCollector.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+</dwsync>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="blocklessStatement.test" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="const.test" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="controlFlow.test" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="declare.test" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="echo.test" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="haltCompiler.test" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="haltCompilerInvalidSyntax.test-fail" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="haltCompilerOutermostScope.test-fail" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="if.test" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="inlineHTML.test" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="switch.test" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="tryCatch.test" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="tryCatch.test-fail" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="unset.test" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+</dwsync>

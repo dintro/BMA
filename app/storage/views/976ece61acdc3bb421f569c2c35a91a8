@@ -1,0 +1,444 @@
+
+<?php $__env->startSection('content'); ?>   
+
+<script type="text/javascript">
+    function MM_jumpMenu(targ,selObj,restore){ //v3.0
+        eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+        if (restore) selObj.selectedIndex=0;
+    }
+</script>
+
+<script type="text/javascript">
+
+    $(document).ready(function()
+    {
+       $('#addcircle').click(function(e)
+        {
+            e.preventDefault();
+            var userID = $(this).data("userid");
+
+            $.post("/sendcirclerequest/" + userID, function( data ) {
+                //alert(data);
+                $('#addcircle').remove();
+                var html = '<a href="#" class="btn btn-primary"><span class="checks">Add</span><b>Request Sent</b></a>'
+                $('.user-btn-wrap').prepend(html);
+                //alert( "Load was performed." );
+            }, "json")
+            .fail(function() {
+                alert( "circle request failed" );
+            });
+        });
+        
+        $('#accept-button').click(function(e){
+          e.preventDefault();
+          var friendRequestID = $(this).data('friendrequestid');
+          $.ajax({
+            type: "POST",
+            url: "/circle/ajax/accept",
+            data: { query: friendRequestID },
+            cache: false,
+            success: function(html){
+              $('#accept-button').remove();
+              $('#reject-button').remove();
+              console.log( 'accepted ' + friendRequestID);
+            }
+          });
+          
+        });
+
+        
+        $( '#reject-button' ).click(function(e){
+          e.preventDefault();
+          var friendRequestID = $(this).data('friendrequestid');
+          //console.log(friendRequestID)
+          $.ajax({
+            type: "DELETE",
+            url: "/circle/ajax/reject",
+            data: { query: friendRequestID },
+            cache: false,
+            success: function(html){
+              $('#accept-button').remove();
+              $('#reject-button').remove();
+              console.log( 'rejected ' + friendRequestID);
+            }
+          });
+          
+        });
+
+        $('.btn-comment').each(function()
+        {
+            $(this).click(function (e)
+            {
+                e.preventDefault();
+                $('.loading').show();
+                $('.comment-list').hide();
+                $('#modal-comment').modal('show');
+                var packageid = $(this).data('packageid');
+                $.ajax({
+                    type: "POST",
+                    url: "/packages/ajax/getcomment",
+                    data: { packageid: packageid },
+                    cache: false,
+                    success: function(data){
+                        $('#send-comment').data('packageid', packageid);
+                        $('#hiddenpackageid').val(packageid);
+                        if(data.success == "success")
+                        {
+                            var html = '';
+                            //console.log(data.comments);
+                            for (var i = 0; i < data.comments.length; i++) {
+                                var comment = data.comments[i];
+                                //console.log(comment);
+                                html += '<div class="pull-left comment-content">';
+                                html += '<div class="image-wrap">';
+                                html += '<img src="'+ comment.image +'" alt="">'
+                                html += '</div>';
+                                html += '<div class="pull-left content-text-wrap">';
+                                html += '<p><b>'+ comment.fullname +'</b> ' +  comment.comment + '</p>';
+                                html += '<p class="font-sm datetime-format" data-messagetime="' + comment.created.date + '">'+ comment.created.date +'</p>';
+                                html += '</div>';
+                                html += '</div>';
+                            }
+
+                            $('.comment-list').html(html);
+
+                            $('.datetime-format').each(function() {
+                                var dateTime = $(this).data('messagetime');
+                                //$(this).text(DateFormat.format.prettyDate(dateTime));
+                                $(this).text(moment(dateTime, 'YYYY-MM-DD HH:mm Z').fromNow());
+
+                            });
+
+                        }
+                        else
+                        {
+                            //alert("empty");
+                            var html = '';
+                            html += '<div class="pull-left comment-content">';
+                            html += 'No Comment yet';
+                            html += '</div>';
+                            $('.comment-list').html(html);
+                            //console.log($('.comment-list').html());
+                        }
+                        //console.log( 'get comments ' + packageid + ' - '+ data.comments.length);
+
+                        $('.loading').hide();
+                		$('.comment-list').show();
+                    }
+                });
+                
+                //console.log(packageid);
+            });
+        });
+
+        $('#send-comment').click(function(e){
+            e.preventDefault();
+            var packageid = $('#hiddenpackageid').val();
+            var userid = $('#hiddenuserid').val();
+            var comment = $('#comment-package').val();
+            if (comment.trim()) {
+                $.ajax({
+                    type: "POST",
+                    url: "/packages/ajax/sendcomment",
+                    data: { packageid: packageid, userid: userid, comment: comment },
+                    cache: false,
+                    success: function(data){
+                        var html = '';
+                        for (var i = 0; i < data.comments.length; i++) {
+                            var comment = data.comments[i];
+
+                            html += '<div class="pull-left comment-content">';
+                            html += '<div class="image-wrap">';
+                            html += '<img src="'+ comment.image +'" alt="">'
+                            html += '</div>';
+                            html += '<div class="pull-left content-text-wrap">';
+                            html += '<p><b>'+ comment.fullname +'</b> ' +  comment.comment + '</p>';
+                            html += '<p class="font-sm datetime-format" data-messagetime="' + comment.created.date + '">'+ comment.created.date +'</p>';
+                            html += '</div>';
+                            html += '</div>';
+                        }
+                        $('#package-' + packageid).text(data.count);
+                        $('.comment-list').html(html);
+
+                        $('.datetime-format').each(function() {
+                            var dateTime = $(this).data('messagetime');
+                            //$(this).text(DateFormat.format.prettyDate(dateTime));
+                            $(this).text(moment(dateTime, 'YYYY-MM-DD HH:mm Z').fromNow());
+
+                        });
+                        $('#comment-package').val('');
+                    }
+                });
+            }
+            //console.log(packageid + " - " + userid + " " + comment);
+            //$('#modal-comment').modal('hide'); 
+        });        
+
+        $('#btn-add-package').click(function(e){
+            e.preventDefault();
+            $('.add-package').modal('show');
+        });
+
+        $('.pastpackage-showdetail').each(function(){
+            $(this).click(function(e){
+                var packageid = $(this).data('packageid');
+                $('.loading-packagedetail').show();
+                $('#packagedetail-content').hide();
+                $('#modal-package').modal('show');
+
+                $.ajax({
+                    type: "POST",
+                    url: "/packages/ajax/retrievepackage",
+                    data: { packageid: packageid },
+                    cache: false,
+                    success: function(data){
+                        console.log(data.title);
+                        $('#packagedetail-title').text(data.title);
+                        $('#packagedetail-posted').text('POSTED ON '+ data.posted);
+                        $('#packagedetail-payments').html('Payment available : <b>'+ data.payments + '</b>');
+                        var table = '<tbody><tr><th class="spaced">Tournament</th><th class="spaced">Buy-In</th></tr>';
+                        for (var i = 0; i < data.tournaments.length; i++) {
+                            var tournament = data.tournaments[i];
+                            table += '<tr>';
+                            table += '<td>';
+                            table += tournament.url;
+                            table += '</td>';
+                            table += '<td>';
+                            table += '$' + tournament.buyin;
+                            table += '</td>';
+                            table += '</tr>';
+                        }
+                        table += '</tbody>';
+                        $('#packagedetail-tournaments').html(table);
+                        $('#packagedetail-total').text('$' + data.total);
+                        $('#packagedetail-markup').text(data.markup);
+                        $('#packagedetail-sold').text(data.sold);
+                        $('.loading-packagedetail').hide();
+                        $('#packagedetail-content').show();
+                    }
+                });
+
+
+            });
+        });
+        
+    });
+</script>
+
+<div id="content" class="content-profile">
+  	<div class="content-full">
+      								
+  		<div class="content-top">
+  			<div class="container pos-relative">
+                <?php echo $__env->make('includes.profilesidebar', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+            </div>
+  		</div>
+
+  		<div class="container">
+            <div class="content-bottom">
+				<div class="col-md-12">
+            		<div class="row">
+                    	<div class="col-xs-8 col-sm-6 col-md-6 packages-title">
+                        	<h4 class="spaced">Past Package(s)</h4>
+                        </div>
+                        <div class="col-xs-4 col-sm-6 col-md-6 new-package">
+                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+            		<div class="row">
+                        <!-- Past Package Start -->
+                        <?php 
+						$isPublic = 0;
+						$isFriend = false;
+						
+						$isPublic = $selectedUser->ispublic;
+						
+						if($isPublic == 0)
+						{
+                            if($selectedUser->friends()->count() > 0)
+                            {
+								
+								foreach($selectedUser->friends()->get() as $friend)
+								{
+									if(Auth::check() && $friend->friendInfo->id == Auth::user()->id)
+									{
+										$isFriend = true;
+									}
+								}
+							}
+						} 
+						
+						
+					if($isFriend == true or $isPublic == 1 or (Auth::check() && $selectedUser->id == Auth::user()->id)){
+						
+							$packages = $selectedUser->packages()
+	                            ->where('ended', '<', date("Y-m-d H:i:s"))
+								->orderBy('created_at','DESC')
+								->paginate(9);
+                        ?>
+                        <?php if($packages->count() == 0): ?>
+                        No Past Package
+                        <?php else: ?>
+                        	<?php foreach($packages as $package): ?>
+                    		<div class="col-xs-6 col-sm-6 col-md-4 past-packages-wrap">
+	                    		<div class="panel panel-default past-packages">
+	                              	<div class="panel-heading">
+	                                  	<div class="row">
+		                                  	<div class="col-md-12">
+		                                    	<div class="sold-sign">Sold</div>
+		                                  		<h5 class="mbtm5"><a class="pastpackage-showdetail" data-packageid="<?php echo $package->id; ?>"> <?php echo $package->title; ?> </a></h5>
+		                                        <p class="font-sm">Posted On <b><?php echo date("M d, Y", strtotime($package->posted)); ?></b></p>
+		                                        <p class="font-sm">Rated <b>4.5 of 50 (38)</b></p>
+		                                  	</div>
+	                             	 	</div>
+	                                </div>
+	                             	<div class="panel-body">
+	                            		<div class="row">
+	                                    	<div class="col-xs-5 col-sm-5 col-md-5 past-packages-sold">
+	                                        	<p class="font-sm text-left">Sold</p>
+	                                            <p class="font-sm text-left"><b><?php echo $package->sellingPercent(); ?>% of <?php echo $package->selling; ?>%</b></p>
+	                                        </div>
+	                                        
+	                                        <div class="col-xs-5 col-sm-5 col-md-5 past-packages-total">
+	                                        	<p class="font-sm text-left">Total</p>
+	                                            <p class="font-sm text-left"><b>$ <?php echo $package->total; ?></b></p>
+	                                        </div>
+	                                        
+	                                        <div class="col-xs-2 col-sm-2 col-md-2 btn-comment-wrap">
+	                                        	<a href="#" data-packageid="<?php echo $package->id; ?>" class="btn btn-default btn-comment">Comment<span class="badge-sm pull-right" id="package-<?php echo $package->id; ?>" ><?php echo $package->comments->count(); ?></span></a>
+	                                        </div>
+	                                    </div>    
+	                              	</div>
+	                            </div>
+	                        </div>
+
+                        	<?php endforeach; ?>
+                        	<div class="col-md-12">
+			            		<div class="row"> 
+			           				<?php echo $packages->links(); ?> 
+			           			</div>
+			                </div>
+                        <?php endif; ?>
+                            <div>
+
+
+                            </div>
+                         <?php }else { ?>You are not authorized to access this page.<?php }?>	
+                        <!-- Past Package End -->
+                    </div>
+                </div>
+                            
+            </div>
+        </div>
+
+  	</div>
+</div>
+<!-- Comment Dialog Box -->
+    <div class="modal fade comment-box" id="modal-comment" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content buy-amount-dialog">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title spaced">Comments</h4>
+                    </div>
+                    <div class="panel-body">
+                        <div class="col-md-12" style="border-right:solid 1px #ccc;">
+                        	<div class="loading" style="text-align: center;margin-top: 20px;display:none">
+                            	<img src="<?php echo url('/img/loading.GIF'); ?>" style="width:30px;height:30px;" >
+                        	</div>
+                            <div class="comment-list">
+                                
+                            </div>
+                            <div class="comment-box-area">
+                                <?php if(Auth::check()): ?>
+                                <span class="small">
+                                    Comment on this
+                                </span>
+                                <textarea name="comment-package" id="comment-package" class="form-control" cols="3" required></textarea>
+                                <input type="hidden" id="hiddenuserid" value="<?php echo Auth::user()->id; ?>" />
+                                <?php endif; ?>
+                                <input type="hidden" id="hiddenpackageid" value="0" />
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <?php if(Auth::check()): ?>
+                            <a href="#" id="send-comment" class="btn btn-primary font-sm">Comment</a>
+                            <?php endif; ?>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>      
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+<!-- Comment Box End -->
+
+<!-- Package Detail Box Start -->
+    <div class="modal fade package-box" id="modal-package" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content buy-amount-dialog">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title spaced">Package Detail</h4>
+                    </div>
+                    <div class="panel-body">
+                        <div class="col-md-12" style="border-right:solid 1px #ccc;">
+                            <div class="loading-packagedetail" style="text-align: center;margin-top: 20px;display:none">
+                                <img src="<?php echo url('/img/loading.GIF'); ?>" style="width:30px;height:30px;" >
+                            </div>
+                            <div id="packagedetail-content">
+                                <div class="panel-body">
+                                    <div class="row package-head">
+                                        <h3><b id="packagedetail-title">Awesome Package </b></h3>
+                                        
+                                        <p class="font-sm" id="packagedetail-posted">POSTED ON 5 APR, 2015</p>
+                                        <p class="font-sm grey pull-left mtop5" id="packagedetail-payments">Payment available : <b>Pokerstars, Fulltilt</b>                                           
+                                        </p>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-8 col-sm-9 col-md-8 package-content">
+                                            <div class="row package-tournament-list">
+                                                <table class="package-tournaments" id="packagedetail-tournaments">
+                                                    
+                                                </table>
+                                            </div>
+                                            <div class="row package-total-value">                                                                                                
+                                                <div class="col-xs-6 col-sm-6 col-md-6">
+                                                    <div class="row">
+                                                        <p class="font-sm">Total</p>
+                                                        <p><b id="packagedetail-total">$         15.00</b></p>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-4 col-sm-3 col-md-4" style="position:static;">
+                                            <div class="row package-right">
+                                                <p class="font-sm">Mark-up</p>
+                                                <p><b id="packagedetail-markup">1.50</b></p>
+                                                <p class="font-sm">Sold</p>
+                                                <p><span class="blue"><b id="packagedetail-sold">0%</b></span> of <b id="packagedetail-available">50%</b></p>                                        
+                                                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>      
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+<!-- Package Detail Box End -->
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.profilemaster', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

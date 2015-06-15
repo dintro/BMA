@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="AddRequestFormatsListener.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="DebugHandlersListener.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="ErrorsLoggerListener.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="EsiListener.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="ExceptionListener.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="FragmentListener.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="LocaleListener.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="ProfilerListener.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="ResponseListener.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="RouterListener.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="SessionListener.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="StreamedResponseListener.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="TestSessionListener.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+</dwsync>

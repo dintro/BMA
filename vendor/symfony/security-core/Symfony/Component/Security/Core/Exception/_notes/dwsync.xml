@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="AccessDeniedException.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="AccountExpiredException.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="AccountStatusException.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="AuthenticationCredentialsNotFoundException.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="AuthenticationException.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="AuthenticationServiceException.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="BadCredentialsException.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="CookieTheftException.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="CredentialsExpiredException.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="DisabledException.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="ExceptionInterface.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="InsufficientAuthenticationException.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="InvalidArgumentException.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="InvalidCsrfTokenException.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="LockedException.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="LogoutException.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="NonceExpiredException.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="ProviderNotFoundException.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="RuntimeException.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="SessionUnavailableException.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="TokenNotFoundException.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="UnsupportedUserException.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="UsernameNotFoundException.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+</dwsync>

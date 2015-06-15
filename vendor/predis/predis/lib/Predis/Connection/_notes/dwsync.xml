@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="AbstractConnection.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="AggregatedConnectionInterface.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="ClusterConnectionInterface.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="ComposableConnectionInterface.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="ComposableStreamConnection.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="ConnectionException.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="ConnectionFactory.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="ConnectionFactoryInterface.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="ConnectionInterface.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="ConnectionParameters.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="ConnectionParametersInterface.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="MasterSlaveReplication.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="PhpiredisConnection.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="PhpiredisStreamConnection.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="PredisCluster.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="RedisCluster.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="ReplicationConnectionInterface.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="SingleConnectionInterface.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="StreamConnection.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="WebdisConnection.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+</dwsync>

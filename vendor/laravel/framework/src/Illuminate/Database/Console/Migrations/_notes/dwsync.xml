@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="BaseCommand.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="InstallCommand.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="MigrateCommand.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="MigrateMakeCommand.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="RefreshCommand.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="ResetCommand.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="RollbackCommand.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+</dwsync>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <?php echo $__env->make('includes.head', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>     
+  </head>
+
+  <body>
+
+   
+
+	<div id="content">
+        <div class="container">
+                  
+            <!-- Main component for a primary marketing message or call to action -->
+            <?php echo $__env->yieldContent('content'); ?>
+
+        </div> <!-- /container -->
+    </div>
+	<div id="footer">    	
+        <?php echo $__env->make('includes.footer', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>        
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+   <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/megamenu.js"></script>
+  </body>
+</html>

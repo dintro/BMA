@@ -1,0 +1,27 @@
+   <?php if($packages->isEmpty()): ?>
+		There are no packages! :(
+    <?php else: ?>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Package Name</th>
+            <th>Posted</th>
+            <th>Ended</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+<tbody>
+                <?php foreach($packages as $package): ?>
+					<tr>
+                        <td><?php echo $package->title; ?></td>
+                        <td><?php echo $package->posted; ?></td>
+                        <td><?php echo $package->ended; ?></td>
+                        <td>
+                        <a href="<?php echo action('PackagesController@edit', $package->id); ?>" class="btn btn-default">Edit</a>
+ 
+                                          	</td>
+					</tr>
+                <?php endforeach; ?>
+            </tbody>
+</table>
+    <?php endif; ?>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="AbstractHandlerTest.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="AbstractProcessingHandlerTest.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="AmqpHandlerTest.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="BrowserConsoleHandlerTest.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="BufferHandlerTest.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="ChromePHPHandlerTest.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="CouchDBHandlerTest.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="DoctrineCouchDBHandlerTest.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="DynamoDbHandlerTest.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="ElasticSearchHandlerTest.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="ErrorLogHandlerTest.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="FilterHandlerTest.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="FingersCrossedHandlerTest.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="FirePHPHandlerTest.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="FlowdockHandlerTest.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="GelfHandlerLegacyTest.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="GelfHandlerTest.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="GroupHandlerTest.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="HipChatHandlerTest.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="LogEntriesHandlerTest.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="MailHandlerTest.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="MockRavenClient.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="MongoDBHandlerTest.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="NativeMailerHandlerTest.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="NewRelicHandlerTest.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="NullHandlerTest.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="PushoverHandlerTest.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="RavenHandlerTest.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="RedisHandlerTest.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="RotatingFileHandlerTest.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="SocketHandlerTest.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="StreamHandlerTest.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="SyslogHandlerTest.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="SyslogUdpHandlerTest.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="TestHandlerTest.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="UdpSocketTest.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="ZendMonitorHandlerTest.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+</dwsync>

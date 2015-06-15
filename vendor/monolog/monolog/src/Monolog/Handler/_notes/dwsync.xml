@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="AbstractHandler.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="AbstractProcessingHandler.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="AbstractSyslogHandler.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="AmqpHandler.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="BrowserConsoleHandler.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="BufferHandler.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="ChromePHPHandler.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="CouchDBHandler.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="CubeHandler.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="DoctrineCouchDBHandler.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="DynamoDbHandler.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="ElasticSearchHandler.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="ErrorLogHandler.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="FilterHandler.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="FingersCrossedHandler.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="FirePHPHandler.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="FlowdockHandler.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="GelfHandler.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="GroupHandler.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="HandlerInterface.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="HipChatHandler.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="LogEntriesHandler.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="LogglyHandler.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="MailHandler.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="MissingExtensionException.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="MongoDBHandler.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="NativeMailerHandler.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="NewRelicHandler.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="NullHandler.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="PushoverHandler.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="RavenHandler.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="RedisHandler.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="RollbarHandler.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="RotatingFileHandler.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="SocketHandler.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="StreamHandler.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="SwiftMailerHandler.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="SyslogHandler.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="SyslogUdpHandler.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="TestHandler.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="ZendMonitorHandler.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+</dwsync>

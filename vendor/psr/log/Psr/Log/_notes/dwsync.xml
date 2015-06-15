@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="AbstractLogger.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="InvalidArgumentException.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="LogLevel.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="LoggerAwareInterface.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="LoggerAwareTrait.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="LoggerInterface.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="LoggerTrait.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="NullLogger.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+</dwsync>

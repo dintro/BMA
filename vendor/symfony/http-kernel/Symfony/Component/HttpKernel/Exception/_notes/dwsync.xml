@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="AccessDeniedHttpException.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="BadRequestHttpException.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="ConflictHttpException.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="FatalErrorException.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="FlattenException.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="GoneHttpException.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="HttpException.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="HttpExceptionInterface.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="LengthRequiredHttpException.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="MethodNotAllowedHttpException.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="NotAcceptableHttpException.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="NotFoundHttpException.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="PreconditionFailedHttpException.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="PreconditionRequiredHttpException.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="ServiceUnavailableHttpException.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="TooManyRequestsHttpException.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="UnauthorizedHttpException.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="UnprocessableEntityHttpException.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="UnsupportedMediaTypeHttpException.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+</dwsync>

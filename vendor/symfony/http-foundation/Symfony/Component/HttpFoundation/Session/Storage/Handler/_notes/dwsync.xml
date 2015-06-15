@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="MemcacheSessionHandler.php" server="www.hassyl.com" local="130560516000000000" remote="130560516000000000" />
+<file name="MemcachedSessionHandler.php" server="www.hassyl.com" local="130560516000000000" remote="130560516000000000" />
+<file name="MongoDbSessionHandler.php" server="www.hassyl.com" local="130560516000000000" remote="130560516000000000" />
+<file name="NativeFileSessionHandler.php" server="www.hassyl.com" local="130560516000000000" remote="130560516000000000" />
+<file name="NativeSessionHandler.php" server="www.hassyl.com" local="130560516000000000" remote="130560516000000000" />
+<file name="NullSessionHandler.php" server="www.hassyl.com" local="130560516000000000" remote="130560516000000000" />
+<file name="PdoSessionHandler.php" server="www.hassyl.com" local="130560516000000000" remote="130560516000000000" />
+<file name="WriteCheckSessionHandler.php" server="www.hassyl.com" local="130560516000000000" remote="130560516000000000" />
+</dwsync>

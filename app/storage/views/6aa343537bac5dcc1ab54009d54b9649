@@ -1,0 +1,11 @@
+
+From 	: <?php echo $name; ?> ( <?php echo $email; ?> )
+<br/>
+Subject	: <?php echo $subject; ?>
+
+<br/>
+Message :
+<p>
+	<?php echo $content; ?>
+
+</p>

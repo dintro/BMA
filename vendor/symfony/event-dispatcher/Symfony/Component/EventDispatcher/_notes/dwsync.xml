@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="CHANGELOG.md" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="ContainerAwareEventDispatcher.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="Event.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="EventDispatcher.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="EventDispatcherInterface.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="EventSubscriberInterface.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="GenericEvent.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="ImmutableEventDispatcher.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="LICENSE" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="README.md" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="composer.json" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="phpunit.xml.dist" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+</dwsync>

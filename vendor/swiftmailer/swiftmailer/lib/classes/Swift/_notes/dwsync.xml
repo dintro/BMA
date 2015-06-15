@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="Attachment.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="CharacterReader.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="CharacterReaderFactory.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="CharacterStream.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="ConfigurableSpool.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="DependencyContainer.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="DependencyException.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="EmbeddedFile.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="Encoder.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="FailoverTransport.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="FileSpool.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="FileStream.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="Filterable.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="Image.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="InputByteStream.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="IoException.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="KeyCache.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="LoadBalancedTransport.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="MailTransport.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="Mailer.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="MemorySpool.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="Message.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="MimePart.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="NullTransport.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="OutputByteStream.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="Preferences.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="ReplacementFilterFactory.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="RfcComplianceException.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="SendmailTransport.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="SignedMessage.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="Signer.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="SmtpTransport.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="Spool.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="SpoolTransport.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="StreamFilter.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="SwiftException.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="Transport.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="TransportException.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="Validate.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+</dwsync>

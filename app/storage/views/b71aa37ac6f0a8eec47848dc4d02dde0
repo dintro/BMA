@@ -1,0 +1,80 @@
+<?php header("Access-Control-Allow-Origin: *");?>
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <?php echo $__env->make('includes.head', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>     
+    <link rel="stylesheet" href="/css/datepicker.css">
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default" role="navigation">
+        <?php echo $__env->make('includes.header', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+    </div>
+
+	<div id="content" class="content-profile">
+    <div class="content-full">
+        <?php if(Session::has('message')): ?>
+            <div class="alerts" style="display:none;">
+                <div class="alert-message warning"><?php echo Session::get('message'); ?></div>
+            </div>
+        <?php endif; ?>
+        
+        <!-- Main component for a primary marketing message or call to action -->
+        <?php echo $__env->yieldContent('content'); ?>
+
+    </div> <!-- /c
+    ontainer -->
+    </div>
+	<div id="footer">    	
+        <?php echo $__env->make('includes.footer', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>        
+    </div>
+
+
+   <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/megamenu.js"></script>
+    <script src="/js/input.js"></script>
+    <script src="/js/bootstrap-modal.js"></script>
+    <script src="<?php echo url('/js/jquery.rateit.js'); ?>" ></script>
+    <script>
+		$('input[type=file]').bootstrapFileInput();
+		$('.file-inputs').bootstrapFileInput();
+</script>
+<script>
+		    $(".buy-overlay").hide(); 
+        $(".toggle").click(function(){    
+        if($(this).attr("class") == "toggle"){
+            $(this).removeClass("toggle");
+            $(this).addClass("add_active");
+        }else{
+            $(this).removeClass("add_active");
+            $(this).addClass("toggle");
+        }
+        $(".buy-overlay").slideToggle("fast");
+        return false;
+    });
+</script>
+
+<script>
+		    $(".buy-overlay2").hide(); 
+        $(".toggle2").click(function(){    
+        if($(this).attr("class") == "toggle2"){
+            $(this).removeClass("toggle2");
+            $(this).addClass("add_active");
+        }else{
+            $(this).removeClass("add_active");
+            $(this).addClass("toggle2");
+        }
+        $(".buy-overlay2").slideToggle("fast");
+        return false;
+    });
+</script>
+    
+  </body>
+</html>

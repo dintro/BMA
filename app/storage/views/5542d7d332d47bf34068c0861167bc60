@@ -1,0 +1,84 @@
+
+<?php $__env->startSection('content'); ?>
+<?php if(Auth::check() && Auth::user()->isadmin): ?>
+		    	
+		    	
+<script src="<?php echo url('/js/ckeditor/ckeditor.js'); ?>" ></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		function toggleEditPage()
+        {
+            $('.page-content').toggle();
+            
+            $(".page-editor").toggle();
+            
+            $('#edit-page').toggle();
+        }
+
+        $("#edit-page").click(function() {       
+            toggleEditPage();
+        });
+
+        $("#btnCancelSubmitPage").click(function(e) {
+            e.preventDefault();
+            toggleEditPage();      
+        });
+
+        
+    });
+</script>
+<?php endif; ?>
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 ">
+    	<h2>Terms and Conditions</h2>
+    	<?php if(Session::has('message')): ?>
+            <div class="alerts">
+                <div class="alert-message warning"><?php echo Session::get('message'); ?></div>
+            </div>
+        <?php endif; ?>
+        <?php 
+
+        $page = Page::where('type','termsandconditions')->first();
+		$content = '';
+		if(!is_null($page))
+		{
+			$content = $page->content;
+		}
+        	
+        		
+		?>
+        <div class="row ">
+        	<div class="page-content">
+        		<?php echo $content; ?>
+
+        		<?php if(Auth::check() && Auth::user()->isadmin): ?>
+		    	<a id="edit-page" class="btn btn-primary"> Edit </a>
+		    	<?php endif; ?>
+        	</div>
+        	<?php if(Auth::check() && Auth::user()->isadmin): ?>
+
+	        <?php echo Form::open(array('url' => 'termsandcondition/edit', 'class'=>'form-signin', 'id'=>'form-edit-page')); ?>
+
+	        <div class="page-editor" style="display:none">
+	        	<div class="form-group">
+    				<textarea class="form-control ckeditor" rows="30" id="content" name="content" required>
+    					<?php echo e($content); ?>
+
+    				</textarea>
+    			</div>
+    			<div class="form-group">
+    				<input class="form-control" id="type" name="type" type="hidden" value="termsandconditions">
+    				<button class="btn btn-primary" type="submit" id="btnSubmitPage" >Save</button>
+                	<button class="btn btn-danger" type="submit" id="btnCancelSubmitPage">Cancel</button>	
+    			</div>
+	        </div>
+	        <?php echo Form::close(); ?>
+
+	        <?php endif; ?>
+        </div>
+       
+    </div>
+</div>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

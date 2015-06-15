@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="ComposableStreamConnectionTest.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="ConnectionExceptionTest.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="ConnectionFactoryTest.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="ConnectionParametersTest.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="MasterSlaveReplicationTest.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="PhpiredisConnectionTest.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="PhpiredisStreamConnectionTest.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="PredisClusterTest.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="RedisClusterTest.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="StreamConnectionTest.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="WebdisConnectionTest.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+</dwsync>

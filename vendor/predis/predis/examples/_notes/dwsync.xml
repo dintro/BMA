@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="CustomDistributionStrategy.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="SharedConfigurations.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="DispatcherLoop.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="KeyPrefixes.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="MasterSlaveReplication.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="MasterSlaveReplicationComplex.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="MonitorContext.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="MultiBulkReplyIterators.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="MultipleSetAndGet.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="PipelineContext.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="PubSubContext.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="RedisCollectionsIterators.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="ServerSideScripting.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="SessionHandler.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="SimpleDebuggableConnection.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="SimpleSetAndGet.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="TransactionWithCAS.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+</dwsync>

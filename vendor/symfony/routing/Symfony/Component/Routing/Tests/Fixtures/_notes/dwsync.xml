@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="CustomXmlFileLoader.php" server="www.hassyl.com" local="130557924000000000" remote="130557924000000000" />
+<file name="RedirectableUrlMatcher.php" server="www.hassyl.com" local="130557924000000000" remote="130557924000000000" />
+<file name="annotated.php" server="www.hassyl.com" local="130557924000000000" remote="130557924000000000" />
+<file name="empty.yml" server="www.hassyl.com" local="130557924000000000" remote="130557924000000000" />
+<file name="foo.xml" server="www.hassyl.com" local="130557924000000000" remote="130557924000000000" />
+<file name="foo1.xml" server="www.hassyl.com" local="130557924000000000" remote="130557924000000000" />
+<file name="incomplete.yml" server="www.hassyl.com" local="130557924000000000" remote="130557924000000000" />
+<file name="missing_id.xml" server="www.hassyl.com" local="130557924000000000" remote="130557924000000000" />
+<file name="missing_path.xml" server="www.hassyl.com" local="130557924000000000" remote="130557924000000000" />
+<file name="namespaceprefix.xml" server="www.hassyl.com" local="130557924000000000" remote="130557924000000000" />
+<file name="nonesense_resource_plus_path.yml" server="www.hassyl.com" local="130557924000000000" remote="130557924000000000" />
+<file name="nonesense_type_without_resource.yml" server="www.hassyl.com" local="130557924000000000" remote="130557924000000000" />
+<file name="nonvalid.xml" server="www.hassyl.com" local="130557924000000000" remote="130557924000000000" />
+<file name="nonvalid.yml" server="www.hassyl.com" local="130557924000000000" remote="130557924000000000" />
+<file name="nonvalid2.yml" server="www.hassyl.com" local="130557924000000000" remote="130557924000000000" />
+<file name="nonvalidkeys.yml" server="www.hassyl.com" local="130557924000000000" remote="130557924000000000" />
+<file name="nonvalidnode.xml" server="www.hassyl.com" local="130557924000000000" remote="130557924000000000" />
+<file name="nonvalidroute.xml" server="www.hassyl.com" local="130557924000000000" remote="130557924000000000" />
+<file name="null_values.xml" server="www.hassyl.com" local="130557924000000000" remote="130557924000000000" />
+<file name="special_route_name.yml" server="www.hassyl.com" local="130557924000000000" remote="130557924000000000" />
+<file name="validpattern.php" server="www.hassyl.com" local="130557924000000000" remote="130557924000000000" />
+<file name="validpattern.xml" server="www.hassyl.com" local="130557924000000000" remote="130557924000000000" />
+<file name="validpattern.yml" server="www.hassyl.com" local="130557924000000000" remote="130557924000000000" />
+<file name="validresource.xml" server="www.hassyl.com" local="130557924000000000" remote="130557924000000000" />
+<file name="validresource.yml" server="www.hassyl.com" local="130557924000000000" remote="130557924000000000" />
+<file name="withdoctype.xml" server="www.hassyl.com" local="130557924000000000" remote="130557924000000000" />
+</dwsync>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="ComposableTextProtocol.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="ResponseBulkHandler.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="ResponseErrorHandler.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="ResponseIntegerHandler.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="ResponseMultiBulkHandler.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="ResponseMultiBulkStreamHandler.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="ResponseStatusHandler.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="TextCommandSerializer.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="TextProtocol.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="TextResponseReader.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+</dwsync>

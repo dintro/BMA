@@ -1,0 +1,17 @@
+
+<?php $__env->startSection('content'); ?>
+				<?php if(Session::has('message')): ?>
+		            <div class="alerts">
+		                <div class="alert-message warning"><?php echo Session::get('message'); ?></div>
+		            </div>
+		        <?php endif; ?>
+				<ul>
+			        <?php foreach($errors->all() as $error): ?>
+			            <li><?php echo $error; ?></li>
+			        <?php endforeach; ?>
+			    </ul>	
+                
+                
+                contact page here		
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

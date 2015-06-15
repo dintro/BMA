@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="Autoloader.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="BasicClientInterface.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="Client.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="ClientException.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="ClientInterface.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="CommunicationException.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="ExecutableContextInterface.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="Helpers.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="NotSupportedException.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="PredisException.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="ResponseError.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="ResponseErrorInterface.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="ResponseObjectInterface.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="ResponseQueued.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+<file name="ServerException.php" server="www.hassyl.com" local="130528548000000000" remote="130528548000000000" />
+</dwsync>

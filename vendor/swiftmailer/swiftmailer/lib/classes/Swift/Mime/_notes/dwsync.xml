@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="Attachment.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="CharsetObserver.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="ContentEncoder.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="EmbeddedFile.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="EncodingObserver.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="Grammar.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="Header.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="HeaderEncoder.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="HeaderFactory.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="HeaderSet.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="Message.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="MimeEntity.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="MimePart.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="ParameterizedHeader.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="SimpleHeaderFactory.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="SimpleHeaderSet.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="SimpleMessage.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="SimpleMimeEntity.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+</dwsync>

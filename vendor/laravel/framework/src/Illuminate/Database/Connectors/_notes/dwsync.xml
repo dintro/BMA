@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="ConnectionFactory.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="Connector.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="ConnectorInterface.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="MySqlConnector.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="PostgresConnector.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="SQLiteConnector.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="SqlServerConnector.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+</dwsync>

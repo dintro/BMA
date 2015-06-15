@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="ApcStore.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="ApcWrapper.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="ArrayStore.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="CacheManager.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="CacheServiceProvider.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="DatabaseStore.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="FileStore.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="MemcachedConnector.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="MemcachedStore.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="NullStore.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="RedisStore.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="RedisTaggedCache.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="Repository.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="StoreInterface.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="TagSet.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="TaggableStore.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="TaggedCache.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="WinCacheStore.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="XCacheStore.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="composer.json" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+</dwsync>

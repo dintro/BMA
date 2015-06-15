@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="BodySigner.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="DKIMSigner.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="DomainKeySigner.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="HeaderSigner.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="OpenDKIMSigner.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="SMimeSigner.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+</dwsync>

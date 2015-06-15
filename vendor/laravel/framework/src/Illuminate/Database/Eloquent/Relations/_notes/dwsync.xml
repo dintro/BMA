@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="BelongsTo.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="BelongsToMany.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="HasMany.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="HasManyThrough.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="HasOne.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="HasOneOrMany.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="MorphMany.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="MorphOne.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="MorphOneOrMany.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="MorphPivot.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="MorphTo.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="MorphToMany.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="Pivot.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="Relation.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+</dwsync>

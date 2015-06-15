@@ -1,0 +1,21 @@
+{
+    "name": "fideloper/proxy",
+    "description": "Set trusted proxies for Laravel",
+    "keywords": ["proxy", "trusted proxy", "load balancing"],
+    "authors": [
+        {
+            "name": "Chris Fidao",
+            "email": "fideloper@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "~4"
+    },
+    "autoload": {
+        "psr-0": {
+            "Fideloper\\Proxy": "src/"
+        }
+    },
+    "license": "MIT"
+}

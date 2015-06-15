@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="AbstractSmtpTransport.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="EsmtpHandler.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="EsmtpTransport.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="FailoverTransport.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="IoBuffer.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="LoadBalancedTransport.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="MailInvoker.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="MailTransport.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="NullTransport.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="SendmailTransport.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="SimpleMailInvoker.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="SmtpAgent.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="SpoolTransport.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+<file name="StreamBuffer.php" server="www.hassyl.com" local="130556196000000000" remote="130556196000000000" />
+</dwsync>

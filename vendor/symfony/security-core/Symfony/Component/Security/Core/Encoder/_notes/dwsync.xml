@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="BCryptPasswordEncoder.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="BasePasswordEncoder.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="EncoderAwareInterface.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="EncoderFactory.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="EncoderFactoryInterface.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="MessageDigestPasswordEncoder.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="PasswordEncoderInterface.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="Pbkdf2PasswordEncoder.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+<file name="PlaintextPasswordEncoder.php" server="www.hassyl.com" local="130563108000000000" remote="130563108000000000" />
+</dwsync>

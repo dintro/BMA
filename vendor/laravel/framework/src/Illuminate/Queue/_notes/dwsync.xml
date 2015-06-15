@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="BeanstalkdQueue.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="FailConsoleServiceProvider.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="IlluminateQueueClosure.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="IronQueue.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="Listener.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="Queue.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="QueueInterface.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="QueueManager.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="QueueServiceProvider.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="README.md" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="RedisQueue.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="SqsQueue.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="SyncQueue.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="Worker.php" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+<file name="composer.json" server="www.hassyl.com" local="130551876000000000" remote="130551876000000000" />
+</dwsync>

@@ -1,0 +1,63 @@
+
+<?php $__env->startSection('content'); ?> 
+<div id="content" class="content-profile">
+
+    <div class="content-full">
+  								
+  		<div class="content-top">
+            <div class="container pos-relative">
+                <?php echo $__env->make('includes.profilesidebar', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+                
+            </div>
+        </div>
+        <div class="container">
+            <div class="content-bottom">
+				<div class="col-md-12">
+                		<div class="row">
+                        	<div class="col-xs-8 col-sm-6 col-md-6 packages-title">
+                            <h4 class="spaced">Block Lists</h4>
+                            </div>                    
+                        </div>
+                </div>
+                
+                <script type="text/javascript">
+				 
+					function cancelblock(userID,userBlockID)
+					{					
+						//var userID = $userid;
+						//var userBlockID = $userblockid;			
+						
+						$.post("/canceluserblock/" + userID +"/"+ userBlockID, function( data ) {
+							
+							$('#rowblock'+userBlockID).remove();
+							
+						}, "json")
+						.fail(function() {
+							alert( "block user failed" );
+						});
+					}
+	
+                </script>
+                
+                <div class="col-md-12">
+                	   <div class="row">
+                        	<div class="col-md-2"><strong>No</strong></div><div class="col-md-4"><strong>Name</strong></div><div class="col-md-4"></div>            
+                        </div>
+                        
+                        <?php foreach($userblocks->get() as $index => $block): ?>	
+                        <?php
+                        	$userblock = User::find( $block->userblock_id );
+						?> 
+                        <div class="row" id="rowblock<?php echo $userblock->id; ?>">                       
+                        	<div class="col-md-2"><?php echo $index+1; ?></div><div class="col-md-4"><?php echo $userblock->firstname; ?> <?php echo $userblock->lastname; ?></div><div class="col-md-4"><a href="javascript:cancelblock(<?php echo Auth::user()->id; ?>,<?php echo $userblock->id; ?>)" id="unblock-button" class="btn btn-primary" data-userid="<?php echo Auth::user()->id; ?>"  data-userblockid="<?php echo $userblock->id; ?>"><span class="unblockuser">Unblock</span><b>Unblock</b></a>	</div>
+                        </div>
+                        <?php endforeach; ?>
+               		
+               </div>
+           </div>
+        </div>
+   </div>
+</div>
+
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.profilemaster', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Buy My Action</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!--
+	<script src="js/ie-emulation-modes-warning.js"></script>
+
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+	-->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="bootstrap-social.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link href="css/megamenu.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default" role="navigation">
+      <div class="container head-relative">
+        
+          <ul class="jetmenu blue">
+           	<li>
+            	<h1 id="logo">
+                <a href="home">Buy My Action</a>
+                </h1>
+            </li>
+
+            <li class="sub-head">
+                <a href="#">Player/Stats</a>
+
+                <div class="megamenu full-width row">
+                	<div>
+                    		<form class="form-search">
+                                  <div class="">
+                                    <input type="text" class="width-lrg head-search">
+                                    	<select class="width-med head-select">
+                                            <option>Category </option>
+                                            <option>Category 1</option>
+                                            <option>Category 2</option>
+                                        <select>
+                                    <button type="submit" class="btn width-sml head-search-btn"><span class="glyphicon glyphicon-search"</button>
+                                  </div>
+                            </form>
+                            <div class="top-list-main-wrap">
+                            		<div class="col-md-3 top-list-wrap padleft0">
+                                    		<h5>Top Winning Players</h5>
+                                            <table class="head-top-list">
+                                            	<tr>
+                                                	<th class="col-md-5">Player</th>
+                                                    <th>Winnings</th>
+                                                    <th>Events</th>
+                                                </tr>
+                                                <tr>
+                                                	<td><a href="#">Tony G</a></td>
+                                                    <td>$ 2,750,701</td>
+                                                    <td>65</td>
+                                                </tr>
+                                                <tr>
+                                                	<td><a href="#">rkruok</a></td>
+                                                    <td>$ 1,989,701</td>
+                                                    <td>2089</td>
+                                                </tr>
+                                                <tr>
+                                                	<td><a href="#">nomadman</a></td>
+                                                    <td>$ 830,267</td>
+                                                    <td>209</td>
+                                                </tr>
+                                                <tr>
+                                                	<td><a href="#">AQUOARAIDER</a></td>
+                                                    <td>$ 489,701</td>
+                                                    <td>2089</td>
+                                                </tr>
+                                                <tr>
+                                                	<td><a href="#">Brian_Adams</a></td>
+                                                    <td>$ 200,267</td>
+                                                    <td>209</td>
+                                                </tr>
+                                            </table>
+                                    </div>
+                                    <div class="col-md-3 top-list-wrap">
+                                    		<h5>Top Winning Buyers</h5>
+                                            <table class="head-top-list">
+                                            	<tr>
+                                                	<th class="col-md-5">Player</th>
+                                                    <th>Winnings</th>
+                                                    <th>Events</th>
+                                                </tr>
+                                                <tr>
+                                                	<td><a href="#">Tony G</a></td>
+                                                    <td>$ 2,750,701</td>
+                                                    <td>65</td>
+                                                </tr>
+                                                <tr>
+                                                	<td><a href="#">rkruok</a></td>
+                                                    <td>$ 1,989,701</td>
+                                                    <td>2089</td>
+                                                </tr>
+                                                <tr>
+                                                	<td><a href="#">nomadman</a></td>
+                                                    <td>$ 830,267</td>
+                                                    <td>209</td>
+                                                </tr>
+                                                <tr>
+                                                	<td><a href="#">AQUOARAIDER</a></td>
+                                                    <td>$ 489,701</td>
+                                                    <td>2089</td>
+                                                </tr>
+                                                <tr>
+                                                	<td><a href="#">Brian_Adams</a></td>
+                                                    <td>$ 200,267</td>
+                                                    <td>209</td>
+                                                </tr>
+                                            </table>
+                                    </div>
+                                    <div class="col-md-3 top-list-wrap">
+                                    		<h5>Top ROI Players</h5>
+                                            <table class="head-top-list">
+                                            	<tr>
+                                                	<th class="col-md-5">Player</th>
+                                                    <th>Return</th>
+                                                    <th>Events</th>
+                                                </tr>
+                                                <tr>
+                                                	<td><a href="#">Tony G</a></td>
+                                                    <td>139,483%</td>
+                                                    <td>65</td>
+                                                </tr>
+                                                <tr>
+                                                	<td><a href="#">rkruok</a></td>
+                                                    <td>110,384%</td>
+                                                    <td>2089</td>
+                                                </tr>
+                                                <tr>
+                                                	<td><a href="#">nomadman</a></td>
+                                                    <td>98,099%</td>
+                                                    <td>209</td>
+                                                </tr>
+                                                <tr>
+                                                	<td><a href="#">AQUOARAIDER</a></td>
+                                                    <td>87,908%</td>
+                                                    <td>2089</td>
+                                                </tr>
+                                                <tr>
+                                                	<td><a href="#">Brian_Adams</a></td>
+                                                    <td>66,998%</td>
+                                                    <td>209</td>
+                                                </tr>
+                                            </table>
+                                    </div>
+                                    <div class="col-md-3 top-list-wrap border0">
+                                    		<h5>Top ROI Buyers</h5>
+                                            <table class="head-top-list">
+                                            	<tr>
+                                                	<th class="col-md-5">Player</th>
+                                                    <th>Return</th>
+                                                    <th>Events</th>
+                                                </tr>
+                                                <tr>
+                                                	<td><a href="#">Tony G</a></td>
+                                                    <td>139,483%</td>
+                                                    <td>65</td>
+                                                </tr>
+                                                <tr>
+                                                	<td><a href="#">rkruok</a></td>
+                                                    <td>110,384%</td>
+                                                    <td>2089</td>
+                                                </tr>
+                                                <tr>
+                                                	<td><a href="#">nomadman</a></td>
+                                                    <td>98,099%</td>
+                                                    <td>209</td>
+                                                </tr>
+                                                <tr>
+                                                	<td><a href="#">AQUOARAIDER</a></td>
+                                                    <td>87,908%</td>
+                                                    <td>2089</td>
+                                                </tr>
+                                                <tr>
+                                                	<td><a href="#">Brian_Adams</a></td>
+                                                    <td>66,998%</td>
+                                                    <td>209</td>
+                                                </tr>
+                                            </table>
+                                    </div>
+                            </div>
+                    		
+                    </div>
+                    
+                </div>
+            </li>
+            <li>
+                <a href="faq">Faq</a>
+            </li>
+            <li>
+                <a href="contactus">Contact Us</a>
+            </li>
+            <li class="btn-join-wrap">
+                <a class="btn-join" href="signup">Join Now !</a>
+            </li>
+
+        </ul>
+          
+        <div class="col-md-3 pull-right login-wrap">
+          		<div class="login-top">
+                <form class="form-signin" role="form">
+                    <input type="email" class="form-control email-form" placeholder="Email address" required autofocus>
+                    <input type="password" class="form-control password-form" placeholder="Password" required>
+                  	<div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-6">
+                    <button class="btn btn-xs btn-warning" type="submit"><span class="glyphicon glyphicon-lock glyph-sm"></span>Log in</button>
+                    
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6">
+                    <a class="head-forgot-password" href="#">Forgot<br>Password ?</a>
+                    </div>
+                    </div>
+                  </form>
+                  </div>
+                  <div class="login-bottom">
+                  <a href="#" class="btn btn-block btn-social btn-facebook"><i class="fa fa-facebook"></i>Sign in with Facebook</a>
+          		  </div>
+          </div>
+      </div>
+    </div>
+	<div id="content">
+    <div class="container">
+
+      <!-- Main component for a primary marketing message or call to action -->
+       <?php echo $__env->yieldContent('content'); ?>
+
+    </div> <!-- /container -->
+    </div>
+	<div id="footer">
+    	
+        		<div class="container">
+                		
+                        <div class="footer-nav-wrap">
+                        <p>Last Update 3/12/14 12:37 EST</p>
+                        <ul class="footer-nav">
+                        	<li><span class="copyright">Copyright 2014 Cecep Gorbacep @99Designs</span></li>
+                        	<li><a href="#">About</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                        <p>All Logos &amp; Trademarks are the property of their respective owners.</p>
+                        </div>
+                        <div class="social-wrap">
+                        <p>Connect with BuyMyAction.com</p>
+                        <ul class="social-connect">
+                        	<li><a href="#"><img src="img/twitter.png" alt=""></a></li>
+                            <li><a href="#"><img src="img/facebook.png" alt=""></a></li>
+                            <li><a href="#"><img src="img/tumblr.png" alt=""></a></li>
+                            <li><a href="#"><img src="img/youtube.png" alt=""></a></li>
+                            <li><a href="#"><img src="img/googleplus.png" alt=""></a></li>
+                        </ul>
+                        </div>
+                        <div class="powered-wrap">
+                        <p>Powered By</p>
+                        <ul class="powered-by">
+                        	<li class="skrill-logo"><a href="#"><img src="img/skrill.svg" alt=""></a></li>
+                            <li class="paypal-logo"><a href="#"><img src="img/paypal.svg" alt=""></a></li>
+                            <li class="pokerstars-logo"><a href="#"><img src="img/pokerstars.svg" alt=""></a></li>
+                        </ul>
+                        </div>
+                </div>
+        
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/megamenu.js"></script>
+  </body>
+</html>

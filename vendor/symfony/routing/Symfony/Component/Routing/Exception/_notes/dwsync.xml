@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="ExceptionInterface.php" server="www.hassyl.com" local="130557924000000000" remote="130557924000000000" />
+<file name="InvalidParameterException.php" server="www.hassyl.com" local="130557924000000000" remote="130557924000000000" />
+<file name="MethodNotAllowedException.php" server="www.hassyl.com" local="130557924000000000" remote="130557924000000000" />
+<file name="MissingMandatoryParametersException.php" server="www.hassyl.com" local="130557924000000000" remote="130557924000000000" />
+<file name="ResourceNotFoundException.php" server="www.hassyl.com" local="130557924000000000" remote="130557924000000000" />
+<file name="RouteNotFoundException.php" server="www.hassyl.com" local="130557924000000000" remote="130557924000000000" />
+</dwsync>
