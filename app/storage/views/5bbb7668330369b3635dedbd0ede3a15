@@ -1,0 +1,48 @@
+
+<?php $__env->startSection('content'); ?>
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 ">
+    	<h2>Frequently Asked Questions</h2>
+    	<?php if(Session::has('message')): ?>
+            <div class="alerts">
+                <div class="alert-message warning"><?php echo Session::get('message'); ?></div>
+            </div>
+        <?php endif; ?>
+    	
+    	<?php if(Auth::check() && Auth::user()->isadmin): ?>
+    	<a href='/faq/add' class="btn btn-primary"> Add Faqs </a>
+    	<?php endif; ?>
+    	<?php $faqs = Faq::orderBy('created_at')->get(); ?>
+		<?php if($faqs->count() > 0): ?>
+    	<ul class="faqs-list">
+    		
+
+    		<?php foreach($faqs as $faq): ?>
+    		<li>
+    			<div class="question-wrap">
+    				<?php echo $faq->question; ?>
+
+    			</div>
+    			<div class="answer-wrap">
+    				<?php echo $faq->answer; ?>
+
+    			</div>
+    			<?php if(Auth::check() && Auth::user()->isadmin): ?>
+    			<div class="manage-faqs-wrap">
+    				<a href='/faq/edit/<?php echo $faq->id; ?>' class="btn btn-primary"> Edit </a>
+    				<a href='/faq/delete/<?php echo $faq->id; ?>' class="btn btn-danger" onclick="return confirm('are you sure you want to delete this faq?')"> Delete </a>
+    			</div>
+    			<?php endif; ?>
+    		</li>
+    		<?php endforeach; ?>
+    	</ul>
+    	<?php else: ?>
+    	<div>
+    		No Frequently Asked Questions available
+    	</div>
+    	<?php endif; ?>
+    </div>
+
+</div>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

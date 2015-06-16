@@ -1,0 +1,166 @@
+<div class="profile-sidebar">
+    <div class="row">
+    	  <div class="col-xs-4 col-sm-3 col-md-12 profile-image-wrap">
+            <img src="<?php echo $selectedUser->getPhotoUrl(); ?>" alt=""/>
+            <?php if(Auth::check() && $selectedUser->id == Auth::user()->id): ?>
+            <button class="btn btn-default edit-avatar" data-toggle="modal" data-target=".bs-example-modal-sm"><b><span class="glyphicon glyphicon-edit"></span> Edit Avatar</b></button>
+            <div class="modal fade bs-example-modal-sm change-photo-wrap" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content change-photo">
+                        <?php echo Form::open(array('url' => url('/settings/editphoto'), 'class'=>'form-signin', 'files'=>true)); ?>
+
+                        <input type="file" class="btn-primary" data-filename-placement="inside" name="photo" id="photo" accept="image/*" required>
+                        <button class="btn btn-primary" type="submit">Upload</button>
+                        <input class="form-control" id="user_id" name="user_id" type="hidden" value="<?php echo $selectedUser->id; ?>">
+                        <button class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                        <?php echo Form::close(); ?>
+
+                        
+                    </div>
+                </div>
+            </div>
+            <?php endif; ?>
+        </div>
+        <div class="col-xs-8 col-sm-4 col-md-12 profile-detail-wrap">
+            
+            <h3> <span id="user-firstname"><?php echo $selectedUser->firstname; ?></span> <span id="user-lastname"><?php echo $selectedUser->lastname; ?></span></h3>
+            <h4><span id="user-country"><?php echo $selectedUser->country; ?></span></h4>
+            <?php if(Auth::check()): ?>
+            <div class="user-btn-wrap">
+             
+                  <?php if(Auth::user()->id == $selectedUser->id): ?>
+                      
+                  <?php else: ?>
+                      <?php if(Friend::alreadyFriend($selectedUser->id, Auth::user()->id)): ?>
+                          
+                      <?php elseif($sentFriendRequest != null): ?>
+                          <a href="#" class="btn btn-primary"><span class="checks">Add</span><b>Request Sent</b></a>
+                      <?php elseif($friendRequest != null): ?>
+                          <a href="#" id="accept-button" data-friendrequestid="<?php echo $friendRequest->id; ?>" class="btn btn-primary"><span class="add-circle">Add</span><b>Accept Request</b></a>
+                          <a href="#" id="reject-button" data-friendrequestid="<?php echo $friendRequest->id; ?>" class="btn btn-primary"><span class="cancel">Ignore</span><b>Ignore Request</b></a>
+                      <?php else: ?>
+                          <a href="#" id="addcircle" data-userid="<?php echo $selectedUser->id; ?>" class="btn btn-primary"><span class="add-circle">Add</span><b>Add to My Circle</b></a>
+                      <?php endif; ?>
+                          <a href="<?php echo url('/messages/compose/'.$selectedUser->id); ?>"  data-userid="<?php echo $selectedUser->id; ?>" class="btn btn-primary"><span class="send-personal-message">Add</span><b>Send Message</b></a>
+                          
+                      <?php if(User::userBlock(Auth::user()->id,$selectedUser->id)): ?>
+                      		<a href="#" id="unblock-button" class="btn btn-primary" data-userid="<?php echo Auth::user()->id; ?>"  data-userblockid="<?php echo $selectedUser->id; ?>"><span class="unblockuser">Unblock</span><b>Unblock this user</b></a>	
+                      <?php else: ?>
+                      		<a href="#" id="block-button" class="btn btn-primary"  data-userid="<?php echo Auth::user()->id; ?>"  data-userblockid="<?php echo $selectedUser->id; ?>"><span class="blockuser">Block</span><b>Block this user</b></a>
+                      <?php endif; ?>
+                  <?php endif; ?>
+              
+          	</div>
+       	    <?php endif; ?>
+            
+        </div>
+        <ul class="profile-sidebar-menu">
+            <li><a href="<?php echo url('/about-me/'. $selectedUser->id); ?>" class="smenu-settings">About Me</a></li>
+            <li><a href="<?php echo url('/profile/'. $selectedUser->id); ?>" class="smenu-spade">Active Package</a></li>
+            <li><a href="<?php echo url('/pastpackages/'. $selectedUser->id); ?>" class="smenu-past">Past Package</a></li>
+            
+            <?php if(Auth::check() && $selectedUser->id == Auth::user()->id): ?>
+            <li><a href="/users/mysweats" class="smenu-settings">My Sweats</a></li>
+             <li><a href="/blocklist" class="smenu-settings">Block Lists</a></li>
+            <li><a href="/users/settings" class="smenu-settings">Settings</a></li>
+            <?php endif; ?>
+      	</ul>
+        <div class="col-sm-5 col-md-12 pull-left">
+            <div class="circle-wrap">
+            <p>Circle</p>
+            <?php if($selectedUser->friends()->count() == 0): ?>
+                <?php if(Auth::check() && Auth::user()->email == $selectedUser->email): ?>
+                    You Have No Friends
+                    <a class="font-sm" href="<?php echo url('/mycircle'); ?>"><b>Full Circle List</b></a>
+                <?php else: ?>
+                    This User Have No Friends
+                    <a class="font-sm" href="<?php echo url('/circle/'.$selectedUser->id); ?>"><b>Full Circle List</b></a>
+                <?php endif; ?>
+            <?php else: ?>
+            <ul class="circle-list">
+                <?php foreach($selectedUser->friends()->take(12)->get() as $friend): ?>
+            		    <li><a href="<?php echo url('/profile/'.$friend->friendInfo->id); ?>" title="<?php echo $friend->friendInfo->getFullname(); ?>" ><img src="<?php echo $friend->friendInfo->getPhotoUrl(); ?>" alt=""></a></li>
+                <?php endforeach; ?>
+            </ul>
+            <a class="font-sm" href="<?php echo url('/circle/'.$selectedUser->id); ?>"><b>Full Circle List</b></a>
+            <?php endif; ?>
+            
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content-top-in">
+    <div class="col-xs-7 col-sm-9 col-md-8 ingames">
+        <h3 class="spaced title-sm">Screen Names</h3>
+          
+          <div class="col-xs-6 col-sm-3 col-md-3 scrname-1" style="display:<?php echo ($selectedUser->getScreenname('Pokerstars') != '') ? "block" : "none"; ?>">
+              <div class="thumbnail ingamename">
+                <img src="/img/pokerstars-logo-sm.jpg" alt="">
+                <div class="caption">
+                  <p><?php echo $selectedUser->getScreenname('Pokerstars'); ?></p>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-xs-6 col-sm-3 col-md-3 scrname-2" style="display:<?php echo ($selectedUser->getScreenname('Fulltilt') != '') ? "block" : "none"; ?>">
+              <div class="thumbnail ingamename">
+                <img src="/img/adjarabet-logo-sm.jpg" alt="">
+                <div class="caption">
+                  <p><?php echo $selectedUser->getScreenname('Fulltilt'); ?></p>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-xs-6 col-sm-3 col-md-3 scrname-3" style="display:<?php echo ($selectedUser->getScreenname('888') != '') ? "block" : "none"; ?>">
+              <div class="thumbnail ingamename">
+                <img src="/img/888-logo-sm.jpg" alt="">
+                <div class="caption">
+                  <p><?php echo $selectedUser->getScreenname('888'); ?></p>
+                </div>
+              </div>
+          </div>
+          
+          <div class="col-xs-6 col-sm-3 col-md-3 scrname-4" style="display:<?php echo ($selectedUser->getScreenname('Party Poker') != '') ? "block" : "none"; ?>">
+              <div class="thumbnail ingamename">
+                <img src="/img/ipoker-logo-sm.jpg" alt="">
+                <div class="caption">
+                  <p><?php echo $selectedUser->getScreenname('Party Poker'); ?></p>
+                </div>
+              </div>
+          </div>
+          
+          <div class="col-xs-6 col-sm-3 col-md-3 scrname-5" style="display:<?php echo ($selectedUser->getScreenname('Titan Poker') != '') ? "block" : "none"; ?>">
+              <div class="thumbnail ingamename">
+                <img src="/img/ipoker-logo-sm.jpg" alt="">
+                <div class="caption">
+                  <p><?php echo $selectedUser->getScreenname('Titan Poker'); ?></p>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-xs-6 col-sm-3 col-md-3 scrname-5" style="display:<?php echo ($selectedUser->getScreenname('Americas Card Room') != '') ? "block" : "none"; ?>">
+              <div class="thumbnail ingamename">
+                <img src="/img/ipoker-logo-sm.jpg" alt="">
+                <div class="caption">
+                  <p><?php echo $selectedUser->getScreenname('Americas Card Room'); ?></p>
+                </div>
+              </div>
+          </div>
+          
+    </div>
+    <div class="col-xs-5 col-sm-3 col-md-3 col-md-offset-1 profile-personal-stats">
+        <?php if(Auth::check() && $selectedUser->id == Auth::user()->id): ?>
+        <h3 class="spaced title-sm">Your Stats</h3>
+        <?php else: ?>
+        <h3 class="spaced title-sm"><?php echo $selectedUser->getFullname(); ?>'s Stats</h3>
+        <?php endif; ?>
+        <?php
+            $packages_sold = $selectedUser->getPackageSold();
+            $packages_bough = $selectedUser->getPackageBought();
+        ?>
+        <p class="font-sm">Pieces Bought / Value</p>
+        <p><b><?php echo $packages_bough['count']; ?> Pieces / $ <?php echo $packages_bough['value']; ?></b></p>
+        <p class="font-sm">Pieces Sold / Value</p>
+        <p><b><?php echo $packages_sold['count']; ?> Pieces / $ <?php echo $packages_sold['value']; ?></b></p>
+    </div>
+</div>

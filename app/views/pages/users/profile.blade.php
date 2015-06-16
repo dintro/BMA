@@ -1012,9 +1012,9 @@
                   	</div>
                     <div class="panel-body">        				
                         
-                        <ul class="nav nav-tabs" role="tablist">
+                        {{--<ul class="nav nav-tabs" role="tablist">
                             <li class="tab-head active"><a href="#packagedetail" class="spaced" role="tab" data-toggle="tab">Package Details</a></li>
-                        </ul>
+                        </ul>--}}
                         {{ Form::open(array('url'=>'packs/create', 'class'=>'form-signin', 'id'=>'form-package')) }}
                         <div id="myTabContent" class="tab-content">
                             <div class="tab-pane fade active in" id="packagedetail">
@@ -1028,10 +1028,16 @@
                                                                         
                                         <div class="form-group col-md-5">
                                             <label>List for</label>
-                                            <select id="ended" name="ended"  class="form-control">
-                                            	<option value="6">6 Hours</option>
+                                            <select id="ended" name="ended" class="form-control">
+                                                <option value="6">6 Hours</option>
                                                 <option value="12">12 Hours</option>
-                                                <option value="48">24 hrs up until 30 days listings</option>
+                                                <option value="24">24 Hours</option>
+                                                <option value="48">2 Days</option>
+                                                <option value="72">3 Days</option>
+                                                <option value="96">4 Days</option>
+                                                <option value="120">5 Days</option>
+                                                <option value="144">6 Days</option>
+                                                <option value="168">7 Days</option>
                                             </select>
                                         </div>
                                     </div>
@@ -1129,9 +1135,9 @@
                                        
                                     </div>
 
-                                    <ul class="nav nav-tabs" role="tablist">
+                                    {{--<ul class="nav nav-tabs" role="tablist">
                                         <li class="tab-head active"><a href="#paymentmenthod" class="spaced" role="tab" data-toggle="tab">Payment Method</a></li>
-                                    </ul>
+                                    </ul>--}}
                                                         
                                     <div class="row">
 									<a href="#paymentmenthod" class="spaced" role="tab" data-toggle="tab"></a>
@@ -1198,9 +1204,9 @@
                                         </div>
 								</div>
 
-                                <ul class="nav nav-tabs" role="tablist">
+                                {{--<ul class="nav nav-tabs" role="tablist">
                                     <li class="tab-head active"><a href="#summary" class="spaced" role="tab" data-toggle="tab">Summary</a></li>
-                                </ul>
+                                </ul>--}}
 
 								<div class="row">
 									<a href="#summary" class="spaced" role="tab" data-toggle="tab"></a> <a href="#summary" class="spaced" role="tab" data-toggle="tab"></a>
